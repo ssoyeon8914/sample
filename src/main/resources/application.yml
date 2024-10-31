@@ -1,0 +1,56 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+
+spring:
+#  config:
+#    activate:
+#      on-profile: local
+  application:
+    name: simple-ele
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3308/mtgranddev?allowMultiQueries=true
+    username: admin
+    password: 1Miraen123!
+#    hikari:
+#      auto-commit: false
+#      connection-test-query: SELECT 1
+#      minimum-idle: 10
+#      maximum-pool-size: 20
+#      max-lifetime: 60000
+
+#  jpa:
+#    open-in-view: true
+#    database-platform: org.hibernate.dialect.MariaDB103Dialect
+#    hibernate:
+#      ddl-auto: create
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      use-new-id-generator-mappings: false
+#    show-sql: false
+#    properties:
+#      hibernate.format_sql: true # ??????? ??? SQL? ??? ?? ???? ?? "true"? ??
+#      show_sql: true #show sql  # ???? SQL ??? ??? ???? ?? "true"? ??
+#
+#    jackson:
+#      serialization:
+#        fail-on-empty-beans: false
+
+logging:
+  level:
+    org.hibernate:
+      type.descriptor.sql: trace #show parameter binding
+      SQL: DEBUG
