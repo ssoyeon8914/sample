@@ -34,9 +34,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 
-    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+//    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+
     implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'org.apache.commons:commons-lang3:'
+
+    // https://mvnrepository.com/artifact/commons-codec/commons-codec
+    implementation 'commons-codec:commons-codec:1.9'
+
 
     // https://mvnrepository.com/artifact/org.json/json
     implementation 'org.json:json:20231013'
@@ -51,7 +56,6 @@ dependencies {
     implementation 'commons-io:commons-io:2.16.1'
 
 
-    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 
     // viewer JSP 사용을 위한 추가
     // Swagger
@@ -71,6 +75,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    //h2 db
+    runtimeOnly 'com.h2database:h2'
+
     //JUnit4 추가
     testImplementation("org.junit.vintage:junit-vintage-engine") {
         exclude group: "org.hamcrest", module: "hamcrest-core"
@@ -79,4 +86,8 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+    
+    //OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+    // 요런 문구 들때 적용
+    jvmArgs '-Xshare:off' // JVM 아규먼트 설정
 }

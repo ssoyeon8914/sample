@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.simple.simpleele.SimpleEleApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T02:09:59" hostname="ITX202500594" time="0.7">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.simple.simpleele.SimpleEleApplicationTests" time="0.7"/>
+  <system-out><![CDATA[11:09:54.892 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.simple.simpleele.SimpleEleApplicationTests]: SimpleEleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:09:55.009 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.simple.SimpleEleApplication for test class com.simple.simpleele.SimpleEleApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2025-02-14T11:09:55.484+09:00  WARN 24808 --- [simple-ele] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.json/json/20231013/e22e0c040fe16f04ffdb85d851d77b07fc05ea52/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-02-14T11:09:55.497+09:00  INFO 24808 --- [simple-ele] [    Test worker] c.s.simpleele.SimpleEleApplicationTests  : Starting SimpleEleApplicationTests using Java 17.0.14 with PID 24808 (started by User in C:\HyosungDev\workspace_xtrm\hyosungitx-vocxtrm\private\sample)
+2025-02-14T11:09:55.497+09:00  INFO 24808 --- [simple-ele] [    Test worker] c.s.simpleele.SimpleEleApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-02-14T11:09:56.378+09:00  INFO 24808 --- [simple-ele] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-14T11:09:56.408+09:00  INFO 24808 --- [simple-ele] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2025-02-14T11:09:56.862+09:00  INFO 24808 --- [simple-ele] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-14T11:09:57.103+09:00  INFO 24808 --- [simple-ele] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/spring-qna-db user=SA
+2025-02-14T11:09:57.106+09:00  INFO 24808 --- [simple-ele] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-14T11:09:57.176+09:00  INFO 24808 --- [simple-ele] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-14T11:09:57.271+09:00  INFO 24808 --- [simple-ele] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-02-14T11:09:57.304+09:00  INFO 24808 --- [simple-ele] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-14T11:09:57.601+09:00  INFO 24808 --- [simple-ele] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-14T11:09:57.964+09:00  INFO 24808 --- [simple-ele] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-14T11:09:57.971+09:00  INFO 24808 --- [simple-ele] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-14T11:09:58.291+09:00  WARN 24808 --- [simple-ele] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-14T11:09:58.963+09:00  INFO 24808 --- [simple-ele] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/spring-qna-db'
+2025-02-14T11:09:59.046+09:00  INFO 24808 --- [simple-ele] [    Test worker] c.s.simpleele.SimpleEleApplicationTests  : Started SimpleEleApplicationTests in 3.83 seconds (process running for 5.097)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
